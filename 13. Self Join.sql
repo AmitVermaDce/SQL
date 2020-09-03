@@ -18,21 +18,20 @@
  Select *from tblEmployee1
 
  --> Left Join
- Select L.Name as Employee, R.Name as Manager
- from tblEmployee1 as L
- LEFT JOIN tblEmployee1 as R
- ON L.ManagerID = R.EmployeeID
+ Select E.Name as Employee, M.Name as Manager
+ from tblEmployee1 as E
+ LEFT JOIN tblEmployee1 as M
+ ON E.ManagerID = M.EmployeeID
 
  
  --> Inner Join
- Select L.Name as Employee, R.Name as Manager
- from tblEmployee1 as L
- Inner JOIN tblEmployee1 as R
- ON L.ManagerID = R.EmployeeID
+Select E.Name as Employee, M.Name as Manager
+ from tblEmployee1 as E
+ INNER JOIN tblEmployee1 as M
+ ON E.ManagerID = M.EmployeeID
 
  
  --> Cross Join
- Select L.Name as Employee, R.Name as Manager
- from tblEmployee1 as L
- CROSS JOIN tblEmployee1 as R
- 
+ Select E.Name as Employee, M.Name as Manager
+ from tblEmployee1 as E
+ CROSS JOIN tblEmployee1 as M
