@@ -46,3 +46,8 @@ Select ID, Name, Email from tblUKCustomers
 	In short, UNION combines rows from 2 or more tables, whereas JOIN combines columns from 2 or more table.
 
 */
+
+Select ID, Name, Email from tblIndiaCustomers
+UNION
+Select ID, Name, Email from tblUKCustomers
+Order by Name
